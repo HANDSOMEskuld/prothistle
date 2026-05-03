@@ -10,14 +10,14 @@ export const siteConfig: SiteConfig = {
 	title: "功成名就的杂草",
 
 	// 站点副标题
-	subtitle: "荒野之中，功成名就的杂草自有它的光芒",
+	subtitle: "荒野之中，杂草自有它的光芒",
 
 	// 站点 URL
 	site_url: "https://prothistle.com",
 
 	// 站点描述
 	description:
-		"荒野之中，功成名就的杂草自有它的光芒。一个关于投资、技术和生活思考的个人博客。",
+		"荒野之中，杂草自有它的光芒。一个关于投资、技术和生活思考的个人博客。",
 
 	// 站点关键词
 	keywords: [
@@ -43,7 +43,7 @@ export const siteConfig: SiteConfig = {
 	// 页面整体宽度（单位：rem）
 	// 数值越大可以让页面内容区域更宽
 	// 在使用单侧栏边栏时，建议调低一些宽度以获得更好的视觉效果。
-	pageWidth: 100,
+	pageWidth: 88,
 
 	// 网站Card样式配置
 	card: {
@@ -91,7 +91,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	// 站点开始日期，用于统计运行天数
-	siteStartDate: "2025-01-01",
+	siteStartDate: "2026-05-01",
 
 	// 站点时区（IANA 时区字符串），用于格式化bangumi、rss里的构建日期时间等等..
 	// 示例："Asia/Shanghai", "UTC", 如果为空，则按照构建服务器的时区进行时区转换
@@ -100,7 +100,7 @@ export const siteConfig: SiteConfig = {
 	// 提醒框（Admonitions）配置，修改后需要重启开发服务器才能生效
 	// 主题：'github' | 'obsidian' | 'vitepress'，每个主题风格和语法不同，可根据喜好选择
 	rehypeCallouts: {
-		theme: "github",
+		theme: "vitepress",
 	},
 
 	// 文章页底部的"上次编辑时间"卡片开关
