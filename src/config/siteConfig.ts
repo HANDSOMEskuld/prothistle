@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "荒野之中，杂草自有它的光芒",
 
 	// 站点 URL
-	site_url: "https://prothistle.com",
+	site_url: "https://handsomeskuld.github.io/prothistle",
 
 	// 站点描述
 	description:
