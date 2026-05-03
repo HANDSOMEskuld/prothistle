@@ -7,3 +7,7 @@ vars = { ENVIRONMENT = "production" }
 
 [env.preview]
 vars = { ENVIRONMENT = "preview" }
+
+[build]
+command = "pnpm run build"
+cwd = "."
