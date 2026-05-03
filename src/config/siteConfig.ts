@@ -13,22 +13,14 @@ export const siteConfig: SiteConfig = {
 	subtitle: "荒野之中，杂草自有它的光芒",
 
 	// 站点 URL
-	site_url: "https://handsomeskuld.github.io/prothistle",
+	site_url: "https://prothistle.pages.dev",
 
 	// 站点描述
 	description:
 		"荒野之中，杂草自有它的光芒。一个关于投资、技术和生活思考的个人博客。",
 
 	// 站点关键词
-	keywords: [
-		"功成名就的杂草",
-		"投资",
-		"技术",
-		"博客",
-		"思考",
-		"复利",
-		"生活",
-	],
+	keywords: ["功成名就的杂草", "投资", "技术", "博客", "思考", "复利", "生活"],
 
 	// 主题色
 	themeColor: {
