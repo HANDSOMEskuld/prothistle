@@ -11,3 +11,6 @@ vars = { ENVIRONMENT = "preview" }
 [build]
 command = "pnpm run build"
 cwd = "."
+
+[assets]
+directory = "./dist"
