@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "荒野之中，杂草自有它的光芒",
 
 	// 站点 URL
-	site_url: "https://prothistle.pages.dev",
+	site_url: "https://prothistle.com",
 
 	// 站点描述
 	description:
@@ -21,6 +21,7 @@ export const siteConfig: SiteConfig = {
 
 	// 站点关键词
 	keywords: ["功成名就的杂草", "投资", "技术", "博客", "思考", "复利", "生活"],
+
 
 	// 主题色
 	themeColor: {
@@ -125,9 +126,9 @@ export const siteConfig: SiteConfig = {
 		// 赞助页面开关
 		sponsor: true,
 		// 留言板页面开关，需要配置评论系统
-		guestbook: true,
+		guestbook: false,
 		// 番组计划页面开关，含追番、游戏、书籍和音乐，dev调试时只获取一页数据，build才会获取全部数据
-		bangumi: true,
+		bangumi: false,
 		// 相册页面开关
 		gallery: true,
 	},

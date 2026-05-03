@@ -12,7 +12,7 @@ export const profileConfig: ProfileConfig = {
 	name: "功成名就的杂草",
 
 	// 个人签名
-	bio: "荒野之中，功成名就的杂草自有它的光芒。",
+	bio: "欢迎关注！🚀 对 AI | 高效工具 | 投资 | 自我成长 充满热情🔥 每日分享实用干货 & 工具，欢迎草友一起成长.💕高强度更新ing💪",
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
@@ -22,21 +22,21 @@ export const profileConfig: ProfileConfig = {
 	// showName: true 时显示图标和名称，false 时只显示图标
 	links: [
 		{
-			name: "qq",
-			icon: "fa7-brands:qq",
-			url: "https://qm.qq.com/q/ZGsFa8qX2G",
+			name: "𝕏",
+			icon: "fa7-brands:x-twitter",
+			url: "https://x.com/prothistle01",
 			showName: false,
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/prothistle",
+			url: "https://github.com/HANDSOMEskuld",
 			showName: false,
 		},
 		{
 			name: "Email",
 			icon: "fa7-solid:envelope",
-			url: "mailto:xiaye@msn.com",
+			url: "mailto:me@prothistle.com",
 			showName: false,
 		},
 		{

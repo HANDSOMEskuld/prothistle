@@ -39,22 +39,14 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 桌面背景图片（支持单张或多张随机）
 		// desktop: "assets/images/DesktopWallpaper/d1.avif",
 		desktop: [
-			"assets/images/DesktopWallpaper/d1.avif",
-			"assets/images/DesktopWallpaper/d2.avif",
-			"assets/images/DesktopWallpaper/d3.avif",
-			"assets/images/DesktopWallpaper/d4.avif",
-			"assets/images/DesktopWallpaper/d5.avif",
-			"assets/images/DesktopWallpaper/d6.avif",
+			"assets/images/DesktopWallpaper/1.png",
+			
 		],
 		// 移动背景图片（支持单张或多张随机）
 		// mobile: "assets/images/MobileWallpaper/m1.avif",
 		mobile: [
 			"assets/images/MobileWallpaper/m1.avif",
-			"assets/images/MobileWallpaper/m2.avif",
-			"assets/images/MobileWallpaper/m3.avif",
-			"assets/images/MobileWallpaper/m4.avif",
-			"assets/images/MobileWallpaper/m5.avif",
-			"assets/images/MobileWallpaper/m6.avif",
+			"assets/images/DesktopWallpaper/1.png",
 		],
 	},
 	// Banner模式特有配置
@@ -71,16 +63,13 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 			// 是否允许用户通过控制面板切换横幅标题显示
 			switchable: true,
 			// 主页横幅主标题
-			title: "Lovely firefly!",
+			title: "🍀功成名就的杂草",
 			// 主页横幅主标题字体大小
 			titleSize: "3.8rem",
 			// 主页横幅副标题
 			subtitle: [
-				"In Reddened Chrysalis, I Once Rest",
-				"From Shattered Sky, I Free Fall",
-				"Amidst Silenced Stars, I Deep Sleep",
-				"Upon Lighted Fyrefly, I Soon Gaze",
-				"From Undreamt Night, I Thence Shine",
+				"荒野之中，杂草自有它的光芒",
+				"一个关于投资、技术和生活思考的个人博客",
 				"In Finalized Morrow, I Full Bloom",
 			],
 			// 主页横幅副标题字体大小
@@ -95,16 +84,16 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 				// 删除速度（毫秒）
 				deleteSpeed: 50,
 				// 完全显示后的暂停时间（毫秒）
-				pauseTime: 2000,
+				pauseTime: 3000,
 			},
 		},
 		// 图片来源
 		credit: {
 			enable: {
 				// 桌面端显示横幅图片来源文本
-				desktop: true,
+				desktop: false,
 				// 移动端显示横幅图片来源文本
-				mobile: true,
+				mobile: false,
 			},
 			text: {
 				// 桌面端要显示的来源文本
@@ -122,11 +111,11 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		// 横幅导航栏配置
 		navbar: {
 			// 横幅导航栏透明模式："semi" 半透明，"full" 完全透明，"semifull" 动态透明
-			transparentMode: "semi",
+			transparentMode: "semifull",
 			// 是否开启毛玻璃模糊效果，开启可能会影响页面性能，如果不开启则是半透明，请根据自己的喜好开启
 			enableBlur: true,
 			// 毛玻璃模糊度
-			blur: 5,
+			blur: 3,
 		},
 		// 横幅图片轮播配置，仅在当配置多张图片时生效
 		carousel: {
@@ -144,9 +133,9 @@ export const backgroundWallpaper: BackgroundWallpaperConfig = {
 		waves: {
 			enable: {
 				// 桌面端是否启用水波纹动画效果
-				desktop: true,
+				desktop: false,
 				// 移动端是否启用水波纹动画效果
-				mobile: true,
+				mobile: false,
 			},
 			// 是否允许用户通过控制面板切换水波纹动画
 			switchable: true,
