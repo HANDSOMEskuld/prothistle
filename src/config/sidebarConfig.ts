@@ -104,7 +104,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 			// 是否在文章详情页显示
 			showOnPostPage: true,
 			// 配置ID：使用第一个广告配置
-			configId: "ad1",
+			configId: "ad2",
 		},
 	],
 

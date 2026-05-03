@@ -45,15 +45,15 @@ export const adConfig2: AdConfig = {
 	content:
 		"如果您觉得本站内容对您有帮助，欢迎支持我们的创作！您的支持是我们持续更新的动力。",
 	image: {
-		src: "assets/images/cover.avif",
+		src: "assets/images/zhichi.png",
 		alt: "支持博主",
-		link: "about/",
-		external: false,
+		link: "https://prothistle.com/sponsor/",
+		external: true,
 	},
 	link: {
 		text: "支持一下",
-		url: "about/",
-		external: false,
+		url: "https://prothistle.com/sponsor/",
+		external: true,
 	},
 	closable: true,
 	displayCount: -1,
