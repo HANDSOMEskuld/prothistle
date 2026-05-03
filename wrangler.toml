@@ -1,0 +1,9 @@
+name = "prothistle"
+compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2024-05-03"
+
+[env.production]
+vars = { ENVIRONMENT = "production" }
+
+[env.preview]
+vars = { ENVIRONMENT = "preview" }
