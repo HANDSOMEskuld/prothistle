@@ -95,13 +95,13 @@ if (fallbackPath && !isLocal && !isFallbackPublic) {
 }
 
 // 图片样式
-const imageClass = "w-full h-full object-cover";
+const imageClass = "w-full h-full object-contain";
 const imageStyle = `object-position: ${position};`;
 
 // 响应式配置
-const widths = preview ? [320, 480, 640, 960] : [800, 1200, 1600, 2000];
+const widths = preview ? [400, 600, 800, 1200] : [800, 1200, 1600, 2000];
 const sizes = preview
-	? "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
+	? "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 400px"
 	: "(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px";
 const quality = preview ? Math.round(configQuality * 0.9) : configQuality;
 
@@ -148,7 +148,7 @@ const remoteReferrerPolicy =
 				class={imageClass}
 				style={imageStyle}
 				width={preview ? 400 : 1200}
-				height={preview ? 300 : 800}
+				height={preview ? 170 : 510}
 				loading="lazy"
 				formats={formats}
 				fallbackFormat={fallbackFormat}
@@ -181,7 +181,7 @@ const remoteReferrerPolicy =
 			class={imageClass}
 			style={imageStyle}
 			width={preview ? 400 : 1200}
-			height={preview ? 300 : 800}
+			height={preview ? 170 : 510}
 			loading={loading}
 			formats={formats}
 			fallbackFormat={fallbackFormat}
