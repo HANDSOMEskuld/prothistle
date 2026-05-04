@@ -293,6 +293,7 @@ const remoteReferrerPolicy =
 			}
 
 			const hideLoading = () => {
+				console.log(`Image loaded successfully: ${img.src}`);
 				container.setAttribute('data-loading', 'false');
 			};
 
@@ -305,6 +306,8 @@ const remoteReferrerPolicy =
 			const onError = () => {
 				if (img.dataset.remote !== 'true') return;
 
+				console.log(`Image failed to load: ${img.src}, trying next API...`);
+				
 				if (currentApiIndex < apiUrls.length) {
 					// 先绑定好事件，再更换src
 					img.addEventListener('load', hideLoading, { once: true });
@@ -312,6 +315,7 @@ const remoteReferrerPolicy =
 					img.src = apiUrls[currentApiIndex];
 					currentApiIndex++;
 				} else {
+					console.log('All APIs failed, showing fallback image');
 					showError();
 				}
 			};
