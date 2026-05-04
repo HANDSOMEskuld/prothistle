@@ -330,6 +330,20 @@ html.is-page-transitioning .banner-home-text-overlay {
     }
 }
 
+/* 防止页面切换期间的布局闪烁 */
+html.is-page-transitioning .absolute.w-full.z-30 {
+    transition: none !important;
+}
+
+html.is-page-transitioning #wallpaper-wrapper {
+    transition: none !important;
+}
+
+/* 确保初始状态的稳定性 */
+.mobile-hide-banner + .absolute.w-full.z-30 {
+    transition-delay: 0s !important;
+}
+
 /* 移动端banner性能优化 */
 @media (max-width: 1023px) {
     .banner-container {

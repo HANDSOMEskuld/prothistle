@@ -407,6 +407,9 @@ function showBannerMode() {
 		}
 	}
 
+	// 同步主内容区域状态，确保一致性
+	syncMainContentState("banner");
+
 	// 显示横幅图片来源文本
 	const creditDesktop = document.getElementById("banner-credit-desktop");
 	const creditMobile = document.getElementById("banner-credit-mobile");
@@ -465,6 +468,30 @@ function showBannerMode() {
 			window.initSemifullScrollDetection();
 		}
 	}
+}
+
+// 同步主内容区域状态的辅助函数
+function syncMainContentState(mode: WALLPAPER_MODE | "banner" | "none" | "overlay") {
+	const mainContentWrapper = document.querySelector(".absolute.w-full.z-30");
+	if (!mainContentWrapper) return;
+
+	const isHomePage = checkIsHomePage(window.location.pathname);
+	const isMobile = window.innerWidth < 1024;
+
+	// 确保状态一致性
+	requestAnimationFrame(() => {
+		if (mode === "banner") {
+			if (isMobile && !isHomePage) {
+				mainContentWrapper.classList.add("mobile-main-no-banner");
+			} else {
+				mainContentWrapper.classList.remove("mobile-main-no-banner");
+			}
+		} else {
+			// 对于 overlay 和 none 模式，始终使用紧凑布局
+			mainContentWrapper.classList.add("no-banner-layout");
+			mainContentWrapper.classList.remove("mobile-main-no-banner");
+		}
+	});
 }
 
 function showOverlayMode() {
