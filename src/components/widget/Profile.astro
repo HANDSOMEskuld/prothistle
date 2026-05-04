@@ -41,8 +41,7 @@ import { url } from "@/utils/url-utils";
       class="h-1 w-5 bg-(--primary) mx-auto rounded-full mb-2 transition"
     >
     </div>
-    <div class="text-center text-neutral-400 mb-2.5 transition">
-      {profileConfig.bio}
+    <div class="text-center text-neutral-400 mb-2.5 transition" set:html={profileConfig.bio.split('\n').join('<br />')}>
     </div>
         <div class="flex flex-wrap gap-2 justify-center mb-1">
             {profileConfig.links.length > 1 && profileConfig.links.map(item =>

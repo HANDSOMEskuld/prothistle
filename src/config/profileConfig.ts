@@ -12,7 +12,10 @@ export const profileConfig: ProfileConfig = {
 	name: "功成名就的杂草",
 
 	// 个人签名
-	bio: "欢迎关注！🚀 对 AI | 高效工具 | 投资 | 自我成长 充满热情🔥 每日分享实用干货 & 工具，欢迎草友一起成长.💕高强度更新ing💪",
+	bio: `欢迎关注！🚀 
+AI | 高效工具 | 投资 | 自我成长🔥 
+每日分享实用干货 & 工具.💕
+高强度更新ing💪`,
 
 	// 链接配置
 	// 已经预装的图标集：fa7-brands，fa7-regular，fa7-solid，material-symbols，simple-icons
