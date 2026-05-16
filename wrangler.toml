@@ -3,10 +3,10 @@ compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2024-05-03"
 
 [env.production]
-vars = { ENVIRONMENT = "production" }
+vars = { ENVIRONMENT = "production", PUBLIC_POSTHOG_API_KEY = "phc_ovQEMzZCdJBVLx55PuLnT7CyD4bJ7LqLo2wEFVi8psZQ", PUBLIC_POSTHOG_HOST = "https://us.i.posthog.com" }
 
 [env.preview]
-vars = { ENVIRONMENT = "preview" }
+vars = { ENVIRONMENT = "preview", PUBLIC_POSTHOG_API_KEY = "phc_ovQEMzZCdJBVLx55PuLnT7CyD4bJ7LqLo2wEFVi8psZQ", PUBLIC_POSTHOG_HOST = "https://us.i.posthog.com" }
 
 [build]
 command = "pnpm run build"
